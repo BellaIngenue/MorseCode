@@ -50,6 +50,7 @@ public class MorseCodeFrame extends JFrame implements ActionListener {
         frame.setSize(300, 500);
         frame.setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         // panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.add(title);
         panel.add(title2);
@@ -111,10 +112,12 @@ public class MorseCodeFrame extends JFrame implements ActionListener {
                     String resultText = englishToMorse(code, englishTextField, letters);
                     result.setText("Here's Your Result:  " + resultText + "  ❤️");
                     result.requestFocusInWindow();
+                    System.out.println(resultText);
                 } else if (englishTextField.isEmpty()) {
                     String resultText = morseToEnglish(code, morseTextField);
                     result.setText("Here's Your Result:  " + resultText + "  ❤️");
                     result.requestFocusInWindow();
+                    System.out.println(resultText);
                 }
 
             }
