@@ -75,10 +75,12 @@ public class MorseCodeFrame extends JFrame implements ActionListener {
         panel.setBackground(Color.WHITE);
 
         morseInfo.setText("Enter Morse Code OR");
-        morseText.setBackground(Color.CYAN);
+        morseText.setBackground(Color.DARK_GRAY);
+        morseText.setForeground(Color.WHITE);
 
         englishInfo.setText("Enter English Text");
-        englishText.setBackground(Color.GREEN);
+        englishText.setBackground(Color.BLACK);
+        englishText.setForeground(Color.WHITE);
 
         submit.setSize(200, 200);
         submit.setText("Submit");
